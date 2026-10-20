@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zaitoon Restaurant &amp; Grill | Gulshan-e-Hadeed, Karachi</title>
+<meta name="description" content="Zaitoon Restaurant & Grill, Gulshan-e-Hadeed, Karachi: Mutton Mandi, Balochi Boti, Kunafa, pizza, parathas and late-night dining. Order on WhatsApp.">
+<!-- canonical, og:url, og:image and JSON-LD are filled from SITE_URL in the script at the bottom -->
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<link rel="icon" href="images/logo.png">
+<meta property="og:type" content="restaurant"><meta property="og:title" content="Zaitoon Restaurant & Grill">
+<meta property="og:description" content="Authentic flavors & royal grills in Karachi.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/"><meta property="og:image" content="images/restaurant-front.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Poppins:wght@400;500;600&family=Noto+Naskh+Arabic:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#E11D1D;--dred:#B01212;--yel:#F6C90E;--char:#141414;--soft:#1F1F1F;--white:#FFF8EC;--cream:#F3E9D2;--olive:#5B6B2A;--leaf:#3E8E3A;--ond:#F5F1E8;--r:14px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Poppins,sans-serif;background:var(--white);color:var(--char);line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:"Baloo 2",Poppins,sans-serif;line-height:1.15}
+a{color:inherit}img{max-width:100%;display:block}button,input,select{font:inherit}
+:focus-visible{outline:3px solid var(--yel);outline-offset:2px}
+.sr{position:absolute;left:-9999px}
+.wrap{max-width:1180px;margin:auto;padding:0 18px}
+section{padding:72px 0}
+.dark{background-color:var(--char);color:var(--ond);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 4l6 14 14-6-6 14 14 6-14 6 6 14-14-6-6 14-6-14-14 6 6-14-14-6 14-6-6-14 14 6z' fill='none' stroke='%23F6C90E' stroke-opacity='.07'/%3E%3C/svg%3E")}
+.light{background:var(--white)}
+h2{font-size:clamp(2rem,5vw,3rem);font-weight:800;margin-bottom:6px}
+.sub{opacity:.8;margin-bottom:24px}
+.grad{background:linear-gradient(90deg,var(--red),var(--yel));-webkit-background-clip:text;background-clip:text;color:transparent}
+.light .grad{background-image:linear-gradient(90deg,var(--dred),#C98F00)}
+.divider{height:3px;width:90px;background:var(--yel);border-radius:3px;margin:14px 0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 22px;border-radius:50px;border:2px solid transparent;font-weight:600;text-decoration:none;cursor:pointer;transition:.2s}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--dred)}
+.btn-yel{background:var(--yel);color:var(--char)}.btn-yel:hover{box-shadow:0 0 18px rgba(246,201,14,.7)}
+.btn-out{border-color:var(--yel);color:var(--yel);background:transparent}.btn-out:hover{background:var(--yel);color:var(--char)}
+/* NAV */
+header{position:sticky;top:0;z-index:50;background:var(--char);border-bottom:3px solid var(--red);transition:.3s}
+header.s{background:rgba(20,20,20,.88);backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:70px;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;min-width:0}
+.brand .lg{width:52px;height:52px;object-fit:contain;mix-blend-mode:lighten;flex:none}
+.brand svg{width:46px;height:46px;flex:none}
+.brand b{font-family:"Baloo 2";font-size:1rem;line-height:1.1;display:block}
+@media(max-width:520px){.brand b{display:none}}
+.ur{font-family:"Noto Naskh Arabic",serif;color:var(--yel);font-size:1.4rem;font-weight:700}
+.navr{display:flex;align-items:center;gap:6px}
+nav ul{display:flex;gap:2px;list-style:none;padding:0;align-items:center}
+nav a.l{display:block;padding:10px 10px;color:var(--ond);text-decoration:none;font-size:.88rem;border-bottom:3px solid transparent}
+nav a.l.on,nav a.l:hover{border-color:var(--yel)}
+.opill{min-height:44px;padding:6px 14px;font-size:.85rem}
+.burger{display:none;background:none;border:0;width:46px;height:46px;cursor:pointer}
+.burger span{display:block;width:26px;height:3px;background:var(--yel);margin:5px auto;border-radius:2px}
+@media(max-width:1020px){.burger{display:block}
+nav{position:fixed;inset:73px 0 0 auto;width:min(300px,80vw);background:var(--char);transform:translateX(100%);transition:.3s;padding:20px;border-left:3px solid var(--red)}
+nav.open{transform:none}nav ul{flex-direction:column;align-items:stretch}}
+/* HERO */
+.hero{position:relative;min-height:calc(100vh - 73px);display:grid;place-items:center;text-align:center;padding:40px 0;color:#fff;overflow:hidden;background:linear-gradient(135deg,var(--dred),var(--char) 70%)}
+.slide{position:absolute;inset:0;background:center/cover;opacity:0;transition:opacity 1.6s}
+.slide.on{opacity:1}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 25%,rgba(246,201,14,.22),transparent 55%),linear-gradient(rgba(20,20,20,.62),rgba(20,20,20,.92))}
+.hero .wrap{position:relative;z-index:2}
+.hlogo{width:min(340px,70vw);margin:0 auto;mix-blend-mode:lighten}
+.hlogo svg{width:140px;margin:auto}
+.hero h1{font-size:clamp(2.1rem,6.5vw,4.2rem);font-weight:800;max-width:900px;margin:6px auto 0}
+.hero p{max-width:620px;margin:14px auto 24px;font-size:1.05rem}
+.hero .divider{margin:16px auto}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.thumbs{display:flex;gap:16px;justify-content:center;margin-top:28px}
+.thumbs div{width:84px;height:84px;border-radius:50%;overflow:hidden;border:3px solid var(--yel);box-shadow:0 0 18px rgba(246,201,14,.5)}
+.thumbs img,.thumbs .phd{width:100%;height:100%;object-fit:cover}
+/* ABOUT */
+.about{display:grid;gap:34px;grid-template-columns:1fr 1fr;align-items:center}
+.ph{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;box-shadow:0 10px 30px rgba(0,0,0,.25);border:2px solid var(--yel)}
+.ph img,.ph .phd{width:100%;height:100%;object-fit:cover}
+.hl{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.hl div{text-align:center;background:var(--cream);border-radius:var(--r);padding:14px 8px;font-size:.85rem;font-weight:600}
+.hl span{display:block;font-size:1.6rem}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.phd{display:grid;place-items:center;background:linear-gradient(135deg,var(--red),var(--char));aspect-ratio:inherit}
+.phd svg{width:38%;max-width:90px;opacity:.9}
+/* MENU CARD BLOCK */
+.mc{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 14px}
+.mc button{flex:0 0 min(240px,70vw);scroll-snap-align:start;aspect-ratio:3/4;border:2px solid var(--yel);border-radius:var(--r);overflow:hidden;padding:0;background:var(--soft);cursor:pointer;color:var(--ond)}
+.mc img,.mc .phd{width:100%;height:100%;object-fit:cover;object-position:top}
+.mnote{margin:6px 0 40px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;opacity:.9}
+/* MENU */
+.mtools{position:sticky;top:70px;z-index:20;background:var(--char);padding:10px 0;border-bottom:1px solid var(--yel)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px}
+.tab{flex:none;min-height:44px;padding:8px 16px;border-radius:50px;border:1px solid var(--yel);background:transparent;color:var(--ond);cursor:pointer;font-size:.85rem}
+.tab.on{background:var(--yel);color:var(--char);font-weight:600}
+#q{width:100%;min-height:46px;padding:10px 16px;border-radius:50px;border:2px solid #444;background:var(--soft);color:#fff}
+.cat h3{font-size:1.7rem;color:var(--yel);margin:34px 0 14px;border-bottom:1px solid rgba(246,201,14,.4)}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}@media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:1150px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--soft);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;border:1px solid #2c2c2c;transition:.25s}
+.card:hover{border-color:var(--yel);box-shadow:0 0 20px rgba(246,201,14,.25)}
+.th{aspect-ratio:4/3;overflow:hidden;background:var(--soft)}
+.th img,.th .phd{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .th img{transform:scale(1.07)}
+.cb{padding:14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h4{font-size:1.02rem;font-weight:700}.price{color:var(--yel);font-weight:700}
+.pills{display:flex;gap:6px;flex-wrap:wrap}
+.pill{min-height:44px;padding:4px 14px;border-radius:50px;border:1px solid var(--yel);background:none;color:var(--ond);cursor:pointer;font-size:.8rem}
+.pill.on{background:var(--yel);color:var(--char);font-weight:600}
+.acts{display:flex;gap:10px;margin-top:auto;padding-top:6px}
+.acts .btn{min-height:46px}.acts .add{flex:1}
+.wa{flex:none;width:46px;padding:0;background:#25D366;border-radius:50%}
+.wa svg{width:24px;height:24px;fill:#fff}
+/* ORDER */
+.ordergrid{display:grid;gap:24px;grid-template-columns:1fr 1fr}
+@media(max-width:860px){.ordergrid{grid-template-columns:1fr}}
+.panel{background:#fff;border-radius:var(--r);padding:22px;box-shadow:0 8px 24px rgba(0,0,0,.1);border-top:4px solid var(--red)}
+label{display:block;font-weight:600;font-size:.9rem;margin:12px 0 4px}
+.panel input,.panel select{width:100%;min-height:46px;padding:8px 12px;border:2px solid #ddd;border-radius:10px;background:#fff}
+.err{color:var(--dred);font-size:.8rem;min-height:1em}
+.two{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+#sum{list-style:none;padding:0;margin:14px 0}
+#sum li{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 0;border-bottom:1px dashed #ccc;font-size:.9rem}
+#sum button{min-width:44px;min-height:44px;border:0;background:none;color:var(--red);font-size:1.4rem;cursor:pointer}
+.total{font-weight:700;text-align:right}
+.okbox{background:#EAF6EA;border:2px solid var(--leaf);border-radius:12px;padding:14px;margin-top:14px}
+#toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,30px);background:var(--char);color:var(--yel);border:1px solid var(--yel);padding:12px 20px;border-radius:12px;opacity:0;pointer-events:none;transition:.3s;z-index:90;max-width:90vw}
+#toast.show{opacity:1;transform:translate(-50%,0)}
+.dash{background:var(--char);color:var(--ond);border-radius:var(--r);padding:22px;border:1px solid var(--yel);margin-top:34px}
+.dash h3{font-size:1.5rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.live{font-size:.7rem;background:var(--leaf);color:#fff;padding:2px 10px;border-radius:50px;display:inline-flex;align-items:center;gap:6px}
+.live i{width:8px;height:8px;border-radius:50%;background:#7CFF7C;animation:pulse 1.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,255,124,.7)}100%{box-shadow:0 0 0 10px transparent}}
+.counters{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:10px;margin:16px 0}
+.counters div{background:var(--soft);border-radius:10px;padding:10px;text-align:center;border-bottom:3px solid var(--red)}
+.counters b{display:block;font-size:1.6rem;color:var(--yel)}
+table{width:100%;border-collapse:collapse;font-size:.85rem}
+th{text-align:left;color:var(--yel);padding:8px;border-bottom:2px solid var(--red)}
+td{padding:8px;border-bottom:1px solid #333;vertical-align:top}
+.st{min-height:44px;padding:6px 14px;border:0;border-radius:50px;font-weight:600;cursor:pointer}
+.s0{background:var(--red);color:#fff}.s1{background:var(--yel);color:var(--char)}.s2{background:var(--leaf);color:#fff}.s3{background:#8a8a8a;color:#111}
+tr.new{animation:hi 2s}@keyframes hi{from{background:rgba(246,201,14,.4)}}
+.empty{text-align:center;padding:24px;opacity:.7}.note{font-size:.75rem;opacity:.7;margin-top:10px}
+@media(max-width:760px){thead{display:none}tr{display:block;background:var(--soft);border-radius:10px;margin-bottom:10px;padding:6px}
+td{display:flex;justify-content:space-between;gap:12px;border:0;text-align:right}td:before{content:attr(data-l);color:var(--yel);font-weight:600;text-align:left}}
+/* GALLERY */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.gi{aspect-ratio:4/3;position:relative;cursor:pointer;border:0;padding:0;border-radius:var(--r);overflow:hidden;background:var(--soft)}
+.gi img,.gi .phd{width:100%;height:100%;object-fit:cover}
+.gi .ov{position:absolute;inset:0;background:rgba(246,201,14,.9);color:var(--char);display:flex;align-items:flex-end;padding:14px;font-weight:600;opacity:0;transition:.25s;text-align:left}
+.gi:hover .ov,.gi:focus-visible .ov{opacity:1}
+.gi .cp{position:absolute;left:0;right:0;bottom:0;padding:8px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;font-size:.85rem;text-align:left}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.94);display:none;flex-direction:column;align-items:center;justify-content:center;z-index:100;padding:16px;color:#fff;text-align:center}
+#lb.open{display:flex}
+#lbs{width:min(100%,900px);height:78vh;overflow:auto;touch-action:pan-x pan-y}
+#lbs img{max-width:none;margin:auto;object-fit:contain;width:100%;height:78vh}
+#lbs .phd{height:78vh}
+#lb .x,#lb .n{position:absolute;min-width:46px;min-height:46px;font-size:1.6rem;border:0;border-radius:50%;background:var(--yel);color:var(--char);cursor:pointer}
+#lb .x{top:12px;right:12px}#lb .p{left:8px;top:50%}#lb .nx{right:8px;top:50%}
+/* FOOTER */
+footer{background:var(--char);color:var(--ond);border-top:4px solid var(--red);padding:56px 0 24px}
+.fg{display:grid;gap:30px;grid-template-columns:1fr 1fr}@media(max-width:800px){.fg{grid-template-columns:1fr}}
+.hours{background:var(--soft);border:1px solid var(--yel);border-radius:var(--r);padding:16px;margin:14px 0}.hours b{color:var(--yel);font-size:1.2rem}
+iframe{width:100%;height:300px;border:0;border-radius:var(--r);background:var(--soft)}
+.soc{display:flex;gap:10px;margin:14px 0}.soc a{width:46px;height:46px;border-radius:50%;background:var(--soft);display:grid;place-items:center;border:1px solid var(--yel)}
+.soc svg{width:22px;height:22px;fill:var(--yel)}
+.fl{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0}.fl a{padding:8px 0}
+.copy{text-align:center;border-top:1px solid #333;margin-top:30px;padding-top:18px;font-size:.85rem;opacity:.8}
+.fab{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;z-index:60;box-shadow:0 4px 14px rgba(0,0,0,.4);animation:pulse2 2.2s infinite}
+.fab svg{width:32px;height:32px;fill:#fff}
+@keyframes pulse2{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}100%{box-shadow:0 0 0 18px transparent}}
+.fade{opacity:0;transform:translateY(18px);transition:.6s}.fade.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.fade{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.3-.5.1-1.1.1-3.6-.9-3-1.3-4.9-4.4-5-4.6-.2-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.3.1.9-.1 1.7z"/></symbol>
+<!-- Fallback emblem: red circle, olive with green leaf -->
+<symbol id="logo" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#E11D1D"/><ellipse cx="30" cy="38" rx="11" ry="14" fill="#3b4620"/><ellipse cx="27" cy="33" rx="3" ry="5" fill="#5B6B2A" opacity=".6"/><path d="M32 25c2-9 9-13 17-12-1 9-7 14-17 12z" fill="#3E8E3A"/></symbol>
+</defs></svg>
+
+<a class="fab waLink" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<header id="hd"><div class="wrap nav">
+  <a class="brand" href="#home" aria-label="Zaitoon Restaurant & Grill home"><span data-logo="nav"></span><b>Zaitoon Restaurant &amp; Grill</b><span class="ur" lang="ur">زیتون</span></a>
+  <div class="navr">
+    <a class="btn btn-red opill" href="#order" aria-label="My order">My Order (<span id="oc">0</span>)</a>
+    <button class="burger" id="bg" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="nv" aria-label="Main"><ul>
+      <li><a class="l" href="#home">Home</a></li><li><a class="l" href="#menu">Menu</a></li><li><a class="l" href="#order">Order Form</a></li>
+      <li><a class="l" href="#about">About Us</a></li><li><a class="l" href="#contact">Location</a></li><li><a class="l" href="#contact">Contact</a></li>
+      <li><a class="btn btn-yel waLink" href="#" target="_blank" rel="noopener">Order via WhatsApp</a></li></ul></nav>
+  </div>
+</div></header>
+
+<main>
+<section class="hero" id="home">
+  <div id="slides" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hlogo" data-logo="hero"></div>
+    <h1>Experience Authentic Flavors &amp; <span class="grad">Royal Grills</span> in Town</h1>
+    <div class="divider"></div>
+    <p>Signature Mutton Mandi, smoky Balochi Boti and golden Special Kunafa, served hot at Zaitoon Restaurant &amp; Grill.</p>
+    <div class="row"><a class="btn btn-red" href="#menu">Explore Menu</a><a class="btn btn-out" href="#order">Order Now</a></div>
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+</section>
+
+<section class="light" id="about"><div class="wrap about fade">
+  <div><h2>About <span class="grad">Us</span></h2><div class="divider"></div>
+  <p>Zaitoon Restaurant &amp; Grill is a premier dining destination on the National Highway, Karachi, offering a vast variety of Pakistani, Chinese, BBQ, Fast Food and traditional specialties.</p>
+  <div class="hl"><div><span>🍖</span>Authentic Taste</div><div><span>🌿</span>Fresh Ingredients</div><div><span>🌙</span>Late-night Dining</div></div></div>
+  <div class="ph" id="aboutPh"></div>
+</div></section>
+
+<section class="dark" id="menu"><div class="wrap">
+  <h2>Our Full <span class="grad">Menu</span></h2><div class="divider"></div>
+  <div class="mc" id="mc"></div>
+  <div class="mnote"><a class="btn btn-yel" id="dl" download>Download Menu</a><span>Browse the full menu, then order any item below on WhatsApp.</span></div>
+</div>
+<div class="mtools"><div class="wrap"><div class="tabs" id="tabs" role="tablist"></div><input id="q" type="search" placeholder="Search the menu…" aria-label="Search menu"></div></div>
+<div class="wrap" id="menuOut"></div></section>
+
+<section class="light" id="order"><div class="wrap">
+  <h2>Place Your <span class="grad">Order</span></h2><div class="divider"></div>
+  <div class="ordergrid">
+   <div class="panel"><form id="of" novalidate>
+    <label for="nm">Customer Name *</label><input id="nm" required autocomplete="name"><div class="err" id="e1"></div>
+    <label for="ph">Phone * (03XX-XXXXXXX)</label><input id="ph" required inputmode="tel" placeholder="0306-2939049" autocomplete="tel"><div class="err" id="e2"></div>
+    <label for="ad">Delivery Address *</label><input id="ad" required autocomplete="street-address"><div class="err" id="e3"></div>
+    <label for="it">Item</label><select id="it"></select>
+    <label for="qt" id="ql">Quantity</label>
+    <div class="two"><input id="qt" type="number" min="1" value="1"><button type="button" class="btn btn-yel" id="add">Add Item</button></div>
+   </form></div>
+   <div class="panel"><h3>Order Summary</h3><ul id="sum"></ul><div class="total" id="tot"></div>
+    <div class="err" id="e4"></div><button class="btn btn-red" id="sub" style="width:100%;margin-top:10px">Submit Order</button>
+    <div class="okbox" id="ok" hidden></div></div>
+  </div>
+  <div class="dash" aria-live="polite">
+    <h3>Live Kitchen / Admin Dashboard <span class="live"><i></i>LIVE</span></h3>
+    <div class="counters" id="cnt"></div><div id="tbl"></div>
+    <button class="btn btn-out" id="clr" style="margin-top:14px">Clear all</button>
+    <p class="note">Demo dashboard: orders are stored in this browser only.</p>
+  </div>
+</div></section>
+
+<section class="dark" id="gallery"><div class="wrap"><h2>Visual <span class="grad">Gallery</span></h2><div class="divider"></div><div class="gal" id="gal"></div></div></section>
+</main>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer"><button class="x" id="lbx" aria-label="Close">×</button><button class="n p" id="lbp" aria-label="Previous">‹</button><button class="n nx" id="lbn" aria-label="Next">›</button><div id="lbs"></div><p id="lbc" style="margin-top:8px"></p></div>
+<div id="toast" role="status"></div>
+
+<footer id="contact"><div class="wrap">
+ <div class="fg"><div>
+  <a class="brand" href="#home"><span data-logo="nav"></span><b style="display:block">Zaitoon Restaurant &amp; Grill</b><span class="ur" lang="ur">زیتون</span></a>
+  <address style="font-style:normal;margin-top:14px">Zaitoon Restaurant &amp; Grill,<br>Main National Highway, Gulshan-e-Hadeed, Karachi.</address>
+  <p style="margin-top:8px">📞 <a href="tel:+923062939049">0306 2939049</a></p>
+  <!-- Owner: confirm opening days. Currently shows "Open till 4:30 AM". -->
+  <div class="hours"><b>Open till 4:30 AM</b><br><small>Late-night dining.</small></div>
+  <div class="row" style="justify-content:flex-start"><a class="btn btn-yel waLink" href="#" target="_blank" rel="noopener">WhatsApp Us</a>
+  <a class="btn btn-out" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Zaitoon+Restaurant+Grill+Gulshan-e-Hadeed+Karachi">Get Directions</a></div>
+  <div class="soc">
+   <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13 22v-8h3l.5-3.5H13V8.3c0-1 .3-1.7 1.8-1.7h1.8V3.5C16.3 3.4 15.3 3.3 14.1 3.3 11.6 3.3 9.8 4.8 9.8 7.6v2.9H7V14h2.8v8z"/></svg></a>
+   <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm5 2.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.3 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg></a>
+   <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 3c.3 2.3 1.7 3.8 4 4v3.2c-1.5 0-2.9-.5-4-1.3V15a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.3a2.8 2.8 0 1 0 1.8 2.6V3z"/></svg></a></div>
+ </div>
+ <!-- Google Map: paste your embed URL (Google Maps > Share > Embed a map > copy the src) into src below -->
+ <div><iframe title="Zaitoon Restaurant & Grill on Google Maps" loading="lazy" src="" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+ <div class="fl"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#order">Order</a><a href="#about">About</a><a href="#gallery">Gallery</a></div>
+ <p class="copy">© Zaitoon Restaurant &amp; Grill</p>
+</div></footer>
+
+<script>
+const SITE_URL="https://YOUR-DOMAIN.com/"; // <-- replace with your real domain (keep trailing slash)
+const ORDER_WEBHOOK_URL=""; // optional: paste an n8n/Zapier webhook URL to also receive each order as JSON
+const WA="923062939049", BRAND="Zaitoon Restaurant & Grill";
+/* ---- ALL IMAGES IN ONE PLACE. Swap files in /images (same names), ideally WebP/JPG < 300 KB, ~1200px wide ---- */
+const IMAGES={
+ logo:"images/logo.png", storefront:"images/restaurant-front.jpg",
+ hero:["images/hero-1.jpg","images/hero-2.jpg","images/hero-3.jpg"],
+ menuCards:["images/menu-card-1.jpg","images/menu-card-2.jpg","images/menu-card-3.jpg"],
+ gallery:[["images/restaurant-front.jpg","Our storefront at night"],["images/mutton-mandi.jpg","Mutton Mandi"],["images/olive-tea.jpg","Special Olive Tea"],["images/zinger-burger.jpg","Zinger Burger"],["images/chicken-mandi.jpg","Chicken Mandi"],["images/kunafa.jpg","Special Kunafa"],["images/matka-biryani.jpg","Matka Biryani"],["images/pizza.jpg","Pizza"],["images/falooda.jpg","Ice Cream Falooda"],["images/family-hall.jpg","Zaitoon Family Hall"],["images/hall.jpg","Banquet hall"]],
+ categories:{chow:"images/cat-chowmein.jpg",pak:"images/cat-pakistani.jpg",rice:"images/cat-rice.jpg",tandoor:"images/cat-tandoor.jpg",pizza:"images/cat-pizza.jpg",bf:"images/cat-breakfast.jpg",tea:"images/cat-tea.jpg",bev:"images/cat-drinks.jpg",sal:"images/cat-salads.jpg"},
+ items:{"Mutton Mandi Full":"images/mutton-mandi.jpg","Chicken Mandi Full":"images/chicken-mandi.jpg","Special Zaitoon Tea (Olive Tea)":"images/olive-tea.jpg","Special Kunafa":"images/kunafa.jpg","Matka Biryani Chicken":"images/matka-biryani.jpg","Special Ice Cream Falooda":"images/falooda.jpg"}
+};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const waUrl=m=>`https://wa.me/${WA}?text=${encodeURIComponent(m)}`;
+$$(".waLink").forEach(a=>a.href=waUrl(`Assalam o Alaikum! I would like to order from ${BRAND}.`));
+
+/* ---- SEO from SITE_URL ---- */
+$("link[rel=canonical]").href=SITE_URL;$("meta[property='og:url']").content=SITE_URL;$("meta[property='og:image']").content=SITE_URL+IMAGES.storefront;
+const ld=document.createElement("script");ld.type="application/ld+json";
+ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Restaurant",name:BRAND,url:SITE_URL,image:SITE_URL+IMAGES.storefront,telephone:"+923062939049",hasMenu:SITE_URL+"#menu",servesCuisine:["Pakistani","BBQ","Chinese","Fast Food"],address:{"@type":"PostalAddress",streetAddress:"Main National Highway, Gulshan-e-Hadeed",addressLocality:"Karachi",addressCountry:"PK"},openingHours:"Mo-Su 12:00-04:30"});
+document.head.append(ld);
+
+/* ---- IMAGE HELPERS: item -> category -> branded placeholder, never a broken icon ---- */
+const PHD=`<div class="phd"><svg role="img" aria-label="Zaitoon"><use href="#logo"/></svg></div>`;
+function pic(list,alt,w,h,eager){const l=list.filter(Boolean);return `<img src="${l[0]}" data-n='${JSON.stringify(l.slice(1))}' alt="${esc(alt)}" width="${w}" height="${h}" ${eager?"":'loading="lazy"'} decoding="async" onerror="fb(this)">`}
+function fb(i){const n=JSON.parse(i.dataset.n||"[]");if(n.length){i.dataset.n=JSON.stringify(n.slice(1));i.src=n[0]}else{i.outerHTML=PHD}}
+/* Logo component (nav, hero, footer): PNG, fallback to SVG emblem */
+$$("[data-logo]").forEach(e=>{const big=e.dataset.logo==="hero";
+ e.innerHTML=`<img class="lg" src="${IMAGES.logo}" alt="Zaitoon Restaurant & Grill logo" width="${big?340:52}" height="${big?340:52}" ${big?"":'loading="lazy"'} onerror="this.outerHTML='<svg role=img aria-label=Zaitoon><use href=#logo /></svg>${big?"<b class=grad style=font-size:2.4rem>zaitoon</b>":""}'">`});
+
+/* ---- HERO ---- */
+$("#slides").innerHTML=IMAGES.hero.map((s,i)=>`<div class="slide${i?"":" on"}" style="background-image:url('${s}')"></div>`).join("");
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches){let k=0;const sl=$$(".slide");setInterval(()=>{sl[k].classList.remove("on");k=(k+1)%sl.length;sl[k].classList.add("on")},5500)}
+$("#thumbs").innerHTML=["Mutton Mandi Full","Chicken Mandi Full","Special Zaitoon Tea (Olive Tea)"].map(n=>`<div>${pic([IMAGES.items[n]],n,84,84,1)}</div>`).join("");
+$("#aboutPh").innerHTML=pic([IMAGES.storefront],"Zaitoon Restaurant & Grill storefront at night",800,600);
+
+/* ---- MENU DATA (edit prices here). p numeric, l label for ranges/units, u unit for quantity ---- */
+const I=(n,p,l,u)=>({n,p,l,u});
+/* PIZZA prices follow the printed menu card (Small/Medium/Large); null = size not offered. Thin Crust Fajita is a placeholder: owner to confirm. */
+const PZ=(n,s,m,l)=>({n,img:"images/pizza.jpg",sizes:Object.fromEntries([["Small",s],["Medium",m],["Large",l]].filter(x=>x[1]!=null))});
+const MENU=[
+{id:"chow",name:"Chow Mein & Pasta",items:[I("Chicken Chow Mein",630),I("Veg Chow Mein",410),I("Alfredo Pasta",890),I("Chicken Red Pasta",780)]},
+{id:"pak",name:"Pakistani Cuisine",items:[I("Mutton Namkeen Rosh",1440),I("Mutton Fry",680),I("Mutton Brain Masala",790),I("Mutton Qeema",780),I("Mutton Kalli",445),I("Chola",290),I("Daal Makhan",340),I("Daal Mash",380),I("Daal Chana",340),I("Daal Palak",340),I("Daal Ghotala",390),I("Lobia",290)]},
+{id:"rice",name:"Rice Special",items:[I("Zaitoon Special Beef Pulao",1000,"PKR 1000/kg","kg"),I("Zaitoon Special Mutton Pulao",1200,"PKR 1200/kg","kg"),I("Beef Kabli Pulao",1800,"PKR 1800/kg","kg"),I("Mutton Mandi Full",2000,"PKR 2000/kg","kg"),I("Chicken Mandi Full",1800,"PKR 1800/kg","kg"),I("Matka Biryani Chicken",1000,"PKR 1000/kg","kg"),I("Special Mandi Rice",340),I("Kaimi Tikka Biryani",800,"PKR 800/plate")]},
+{id:"tandoor",name:"Hot Tandoor",items:[I("Chicken Reshmi Naan",380),I("Cheese Naan",350),I("Plain Naan",80),I("Afghan Naan",90),I("Roghani Naan",90),I("Garlic Naan",140),I("Kabuli Kulcha",80),I("Taftan",80),I("Chapati",40)]},
+{id:"pizza",name:"Pizza & Thin Crust Pizza",items:[PZ("Tikka Pizza",495,955,1445),PZ("Chicken Malai Boti Pizza",495,955,1445),PZ("Fajita Pizza",495,955,1445),PZ("Pepperoni Pizza",525,875,1345),PZ("Vegetable Pizza",415,575,945),PZ("Kababi Feast",495,955,1445),PZ("Cheesy Lover",525,775,1195),PZ("Thin Crust Smokey Pizza",null,795,1145),PZ("Thin Crust Arabic Pizza",null,895,1245),PZ("Thin Crust Fajita Pizza",null,895,1245),PZ("Thin Crust Crispy Pizza",null,945,1545),PZ("Crown Crust Pizza",null,895,1495)],
+  deals:[I("Italian Pizza Deal",null,"Ask on WhatsApp"),I("Extra Large Pizza Deal",null,"Ask on WhatsApp"),I("Family Package Deal",null,"Ask on WhatsApp")]},
+{id:"bf",name:"Breakfast Menu & Special Parathas",items:[I("Mala",300),I("Mutton Brain Masala (Breakfast)",680),I("Namkeen Rosh (Breakfast)",1440),I("Mutton Qeema (Breakfast)",780),I("Anda Chola",360),I("Mutton Paya 3pcs",600),I("Shahi Lachha Paratha",120),I("Wheat Paratha",100),I("Tandoori Paratha",120),I("Sulemani Paratha",100),I("Aalu Paratha",220),I("Aalu Cheese Paratha",320),I("Cheese Paratha",330),I("Chicken Paratha",490),I("Special Puri Paratha",150),I("Halwa & 2 Puri",190)]},
+{id:"tea",name:"Omelette & Hot Tea",items:[I("Pakistani Omelette",220),I("Fry Omelette",120),I("Half Fry",90),I("Boiled Egg",60),I("Green Tea",90),I("Special Zaitoon Tea (Olive Tea)",110),I("Special Milk Tea",160)]},
+{id:"bev",name:"Beverages, Mocktails & Desserts",items:[I("Mocktails & Lemonades",null,"PKR 340–350"),I("Coladas",null,"PKR 340–390"),I("Special Ice Cream Falooda",350),I("Fresh Seasonal Juices",null,"PKR 450+"),I("Ice Cream Milk Shakes",null,"PKR 430–440"),I("Special Kheer",230),I("Special Kunafa",980)]},
+{id:"sal",name:"Salads & Cold Drinks",items:[I("Green Salad",170),I("Special Raita",180),I("Russian Salad",730),I("Soft Drinks",null,"Price on request"),I("Mineral Water",null,"Price on request")]}
+];
+
+/* ---- CART ---- */
+let cart=[];
+function addCart(n,p,l,q,u){const e=cart.find(x=>x.n===n);e?e.q+=q:cart.push({n,p,l,q,u});renderCart()}
+const sumT=a=>a.reduce((t,x)=>t+(x.p!=null?x.p*x.q:0),0),hasOpen=a=>a.some(x=>x.p==null);
+const qs=x=>x.q+(x.u?" kg":"");
+function renderCart(){
+ $("#oc").textContent=cart.reduce((t,x)=>t+x.q,0);
+ $("#sum").innerHTML=cart.length?cart.map((x,i)=>`<li><span>${qs(x)} × ${esc(x.n)} <small>(${esc(x.l)})</small></span><button type="button" data-i="${i}" aria-label="Remove ${esc(x.n)}">×</button></li>`).join(""):`<li>No items yet. Add items from the menu.</li>`;
+ $("#tot").textContent=cart.length?`Estimated total: PKR ${sumT(cart)}${hasOpen(cart)?" + items priced on request":""}`:"";
+ $$("#sum button").forEach(b=>b.onclick=()=>{cart.splice(b.dataset.i,1);renderCart()})}
+let tt;function toast(t){const e=$("#toast");e.textContent=t;e.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("show"),2200)}
+
+/* ---- MENU RENDER ---- */
+function card(i,c){
+ const sz=i.sizes;let size=sz?(sz.Medium?"Medium":Object.keys(sz)[0]):null;
+ const cur=()=>({n:i.n+(size?` (${size})`:""),p:sz?sz[size]:i.p,l:sz?"PKR "+sz[size]:(i.l||(i.p!=null?"PKR "+i.p:"Ask on WhatsApp"))});
+ const el=document.createElement("div");el.className="card";el.dataset.n=i.n.toLowerCase();
+ el.innerHTML=`<div class="th">${pic([i.img||IMAGES.items[i.n],IMAGES.categories[c]],i.n,600,450)}</div><div class="cb"><h4>${esc(i.n)}</h4>
+ ${sz?`<div class="pills" role="group" aria-label="Size">${Object.keys(sz).map(k=>`<button type="button" class="pill${k===size?" on":""}" data-s="${k}">${k}</button>`).join("")}</div>`:""}
+ <div class="price"></div><div class="acts"><a class="btn wa" target="_blank" rel="noopener" aria-label="Order ${esc(i.n)} on WhatsApp"><svg><use href="#wa"/></svg></a><button type="button" class="btn btn-red add">Add to Order</button></div></div>`;
+ const upd=()=>{const x=cur();el.querySelector(".price").textContent=x.l;el.querySelector(".wa").href=waUrl(`Assalam o Alaikum! I would like to order: ${i.n} (${size?size+", ":""}${x.l}) from ${BRAND}.`)};
+ el.querySelectorAll(".pill").forEach(b=>b.onclick=()=>{size=b.dataset.s;el.querySelectorAll(".pill").forEach(x=>x.classList.toggle("on",x===b));upd()});
+ el.querySelector(".add").onclick=()=>{const x=cur();addCart(x.n,x.p,x.l,1,i.u);toast("Added to your order")};
+ upd();return el}
+function renderMenu(){
+ const out=$("#menuOut");out.innerHTML="";
+ MENU.forEach(c=>{const s=document.createElement("div");s.className="cat";s.id="cat-"+c.id;s.innerHTML=`<h3>${esc(c.name)}</h3>`;
+  const g=document.createElement("div");g.className="grid";c.items.forEach(i=>g.append(card(i,c.id)));s.append(g);
+  if(c.deals){s.insertAdjacentHTML("beforeend",`<h3 style="font-size:1.25rem">Deals</h3>`);const d=document.createElement("div");d.className="grid";c.deals.forEach(i=>d.append(card(i,c.id)));s.append(d)}
+  out.append(s)});
+ $("#tabs").innerHTML=MENU.map(c=>`<button class="tab" data-id="${c.id}">${esc(c.name)}</button>`).join("");
+ $$(".tab").forEach(t=>t.onclick=()=>{$("#q").value="";filter();$$(".tab").forEach(x=>x.classList.toggle("on",x===t));$("#cat-"+t.dataset.id).scrollIntoView({behavior:"smooth"})})}
+function filter(){const q=$("#q").value.trim().toLowerCase();
+ $$(".card").forEach(c=>c.style.display=!q||c.dataset.n.includes(q)?"":"none");
+ $$(".cat").forEach(s=>s.style.display=[...s.querySelectorAll(".card")].some(c=>c.style.display!=="none")?"":"none")}
+$("#q").oninput=filter;
+
+/* ---- ORDER FORM ---- */
+const FLAT=MENU.flatMap(c=>c.items.concat(c.deals||[]).flatMap(i=>i.sizes?Object.entries(i.sizes).map(([k,p])=>({n:`${i.n} (${k})`,p,l:"PKR "+p,g:c.name})):[{n:i.n,p:i.p,l:i.l||(i.p!=null?"PKR "+i.p:"Ask on WhatsApp"),u:i.u,g:c.name}]));
+$("#it").innerHTML=MENU.map(c=>`<optgroup label="${esc(c.name)}">`+FLAT.map((x,k)=>[x,k]).filter(([x])=>x.g===c.name).map(([x,k])=>`<option value="${k}">${esc(x.n)} - ${esc(x.l)}</option>`).join("")+"</optgroup>").join("");
+const qLabel=()=>$("#ql").textContent=FLAT[$("#it").value].u?"Quantity (kg)":"Quantity";
+$("#it").onchange=qLabel;qLabel();
+$("#add").onclick=()=>{const x=FLAT[$("#it").value];addCart(x.n,x.p,x.l,Math.max(1,parseInt($("#qt").value)||1),x.u)};
+
+/* ---- DASHBOARD ---- */
+const ST=["New","Preparing","Ready","Delivered"];
+let orders=[];try{orders=JSON.parse(localStorage.getItem("zaitoonOrders")||"[]")}catch(e){}
+const save=()=>{try{localStorage.setItem("zaitoonOrders",JSON.stringify(orders))}catch(e){}};
+function renderDash(newId){
+ const n=s=>orders.filter(o=>o.s===s).length;
+ $("#cnt").innerHTML=[["Total",orders.length],["New",n(0)],["Preparing",n(1)],["Delivered",n(3)]].map(([a,b])=>`<div><b>${b}</b>${a}</div>`).join("");
+ $("#tbl").innerHTML=orders.length?`<table><thead><tr><th>Order #</th><th>Time</th><th>Customer</th><th>Phone</th><th>Address</th><th>Items</th><th>Total</th><th>Status</th></tr></thead><tbody>`+orders.map(o=>`<tr class="${o.id===newId?"new":""}"><td data-l="Order #">${o.id}</td><td data-l="Time">${esc(o.t)}</td><td data-l="Customer">${esc(o.c)}</td><td data-l="Phone"><a href="tel:${esc(o.p)}">${esc(o.p)}</a></td><td data-l="Address">${esc(o.a)}</td><td data-l="Items">${o.i.map(x=>`${qs(x)} × ${esc(x.n)}`).join("<br>")}</td><td data-l="Total">${esc(o.tot)}</td><td data-l="Status"><button class="st s${o.s}" data-id="${o.id}" aria-label="Order ${o.id}: ${ST[o.s]}. Click to advance">${ST[o.s]}</button></td></tr>`).join("")+`</tbody></table>`:`<p class="empty">No orders yet</p>`;
+ $$(".st").forEach(b=>b.onclick=()=>{const o=orders.find(x=>x.id==b.dataset.id);o.s=(o.s+1)%4;save();renderDash()})}
+$("#clr").onclick=()=>{if(orders.length&&confirm("Clear all orders?")){orders=[];save();renderDash()}};
+$("#sub").onclick=()=>{
+ const nm=$("#nm").value.trim(),ph=$("#ph").value.trim(),ad=$("#ad").value.trim();
+ const e1=nm?"":"Enter your name.",e2=/^03\d{2}-?\d{7}$/.test(ph)?"":"Use a Pakistani number like 0306-2939049.",e3=ad?"":"Enter your delivery address.",e4=cart.length?"":"Add at least one item.";
+ $("#e1").textContent=e1;$("#e2").textContent=e2;$("#e3").textContent=e3;$("#e4").textContent=e4;
+ if(e1||e2||e3||e4)return;
+ const id=orders.reduce((m,o)=>Math.max(m,o.id),0)+1,items=cart.map(x=>({...x}));
+ const tot=sumT(items)?"PKR "+sumT(items)+(hasOpen(items)?" +":""):"On request";
+ const o={id,t:new Date().toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"}),c:nm,p:ph,a:ad,i:items,tot,s:0};
+ orders.unshift(o);save();renderDash(id);
+ if(ORDER_WEBHOOK_URL){try{fetch(ORDER_WEBHOOK_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(o)}).catch(()=>{})}catch(e){}}
+ const msg=`Assalam o Alaikum! New order from ${BRAND}\nName: ${nm}\nPhone: ${ph}\nAddress: ${ad}\n`+items.map(x=>`- ${qs(x)} x ${x.n} (${x.l})`).join("\n")+`\nTotal: ${tot}`;
+ const ok=$("#ok");ok.hidden=false;ok.innerHTML=`<b>✅ Order #${id} received!</b><br><a class="btn btn-yel" style="margin-top:8px" target="_blank" rel="noopener" href="${waUrl(msg)}">Also send this order on WhatsApp</a>`;
+ toast("Order #"+id+" placed");cart=[];renderCart();$("#of").reset();qLabel()};
+
+/* ---- LIGHTBOX (menu cards + gallery): prev/next, Esc, wheel / pinch / double-tap zoom ---- */
+let LB=[],li=0,zoom=1;
+const lbImg=()=>$("#lbs img");
+function setZ(z){zoom=Math.min(4,Math.max(1,z));const m=lbImg();if(m){m.style.width=zoom*100+"%";m.style.height=zoom*78+"vh"}}
+function showLb(){const [s,c]=LB[li];zoom=1;$("#lbs").innerHTML=pic([s],c,1200,900,1);$("#lbc").textContent=c;$("#lbs").scrollTo(0,0)}
+function openLb(list,i){LB=list;li=i;showLb();$("#lb").classList.add("open");$("#lbx").focus()}
+const step=d=>{li=(li+d+LB.length)%LB.length;showLb()},closeLb=()=>$("#lb").classList.remove("open");
+$("#lbx").onclick=closeLb;$("#lbp").onclick=()=>step(-1);$("#lbn").onclick=()=>step(1);
+$("#lb").onclick=e=>{if(e.target.id==="lb")closeLb()};
+addEventListener("keydown",e=>{if(!$("#lb").classList.contains("open"))return;if(e.key==="Escape")closeLb();if(e.key==="ArrowLeft")step(-1);if(e.key==="ArrowRight")step(1)});
+$("#lbs").addEventListener("wheel",e=>{if(e.ctrlKey||e.metaKey){e.preventDefault();setZ(zoom-e.deltaY/200)}},{passive:false});
+$("#lbs").addEventListener("dblclick",()=>setZ(zoom>1?1:2.5));
+let pd=0;$("#lbs").addEventListener("touchmove",e=>{if(e.touches.length===2){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);if(pd)setZ(zoom*d/pd);pd=d}},{passive:true});
+$("#lbs").addEventListener("touchend",()=>pd=0);
+
+/* ---- MENU CARDS + GALLERY ---- */
+$("#mc").innerHTML=IMAGES.menuCards.map((s,i)=>`<button type="button" data-i="${i}" aria-label="Open menu card ${i+1}">${pic([s],"Zaitoon menu card "+(i+1),240,320)}</button>`).join("");
+$$("#mc button").forEach(b=>b.onclick=()=>openLb(IMAGES.menuCards.map((s,i)=>[s,"Menu card "+(i+1)]),+b.dataset.i));
+$("#dl").href=IMAGES.menuCards[0];
+$("#gal").innerHTML=IMAGES.gallery.map(([s,c],i)=>`<button type="button" class="gi" data-i="${i}" aria-label="View ${esc(c)}">${pic([s],c,600,450)}<span class="cp">${esc(c)}</span><span class="ov">${esc(c)}</span></button>`).join("");
+$$(".gi").forEach(b=>b.onclick=()=>openLb(IMAGES.gallery,+b.dataset.i));
+
+/* ---- NAV + SCROLL EFFECTS ---- */
+const bg=$("#bg"),nv=$("#nv");bg.onclick=()=>{const o=nv.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+nv.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nv.classList.remove("open");bg.setAttribute("aria-expanded",false)}));
+addEventListener("scroll",()=>$("#hd").classList.toggle("s",scrollY>20),{passive:true});
+const links=$$("a.l"),nio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+$$("section[id],footer[id]").forEach(s=>nio.observe(s));
+const fio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");fio.unobserve(e.target)}}),{threshold:.1});
+$$(".fade").forEach(e=>fio.observe(e));
+
+renderMenu();renderCart();renderDash();
+</script>
+</body>
+</html>
